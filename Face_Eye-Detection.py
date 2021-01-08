@@ -1,12 +1,10 @@
 #import libraries
 import cv2
 
-#import classifier for face and eye detection
-face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Import Classifier for Face and Eye Detection
-face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_classifier = cv2.CascadeClassifier ('haarcascade_eye.xml')
+face_classifier = cv2.CascadeClassifier('xml/haarcascade_frontalface_default.xml')
+eye_classifier = cv2.CascadeClassifier ('xml/haarcascade_eye.xml')
 
 def face_detector (img, size=0.5):
 # Convert Image to Grayscale
